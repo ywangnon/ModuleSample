@@ -44,11 +44,19 @@ class CustomAlert: UIViewController {
     }
     
     func setAddSubViews() {
-        
+        self.view.addSubviews([
+            self.alertView,
+            self.acceptButton,
+            self.rejectButton
+        ])
     }
     
     func setLayouts() {
+        let safeArea = self.view.safeAreaLayoutGuide
         
+        NSLayoutConstraint.activate([
+            self.alertView.widthAnchor.constraint(equalToConstant: 200)
+        ])
     }
     
     func setDelegates() {
