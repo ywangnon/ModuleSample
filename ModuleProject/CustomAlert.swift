@@ -127,6 +127,8 @@ extension CustomAlert {
         self.acceptButton.isHidden = true
         return self
     }
+    /// 애매허다. 테스트하기에는 애매한 기능
+    /// - Returns: <#description#>
     open func isHiddenRejectButton() -> CustomAlert {
         self.rejectButton.isHidden = true
         return self
