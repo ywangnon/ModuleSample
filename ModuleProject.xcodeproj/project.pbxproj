@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		013F8CA92462E9DC00FEB353 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013F8CA82462E9DC00FEB353 /* AlertView.swift */; };
 		014A4CD0245701B100509BF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014A4CCF245701B100509BF2 /* AppDelegate.swift */; };
 		014A4CD2245701B100509BF2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014A4CD1245701B100509BF2 /* SceneDelegate.swift */; };
 		014A4CD4245701B100509BF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014A4CD3245701B100509BF2 /* ViewController.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		013F8CA82462E9DC00FEB353 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		014A4CCC245701B100509BF2 /* ModuleProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ModuleProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		014A4CCF245701B100509BF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		014A4CD1245701B100509BF2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				014A4CD1245701B100509BF2 /* SceneDelegate.swift */,
 				014A4CD3245701B100509BF2 /* ViewController.swift */,
 				014A4CE3245701D100509BF2 /* CustomAlert.swift */,
+				013F8CA82462E9DC00FEB353 /* AlertView.swift */,
 				014A4CD5245701B100509BF2 /* Main.storyboard */,
 				014A4CD8245701B300509BF2 /* Assets.xcassets */,
 				014A4CDA245701B300509BF2 /* LaunchScreen.storyboard */,
@@ -203,6 +206,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				013F8CA92462E9DC00FEB353 /* AlertView.swift in Sources */,
 				014A4CD4245701B100509BF2 /* ViewController.swift in Sources */,
 				014A4CD0245701B100509BF2 /* AppDelegate.swift in Sources */,
 				014A4CD2245701B100509BF2 /* SceneDelegate.swift in Sources */,
