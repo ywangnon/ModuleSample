@@ -30,8 +30,7 @@ class ViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        let alert = CustomAlert()
-        self.present(alert, animated: true, completion: nil)
+        
     }
     
     func setViewFoundations() {
