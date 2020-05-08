@@ -17,5 +17,21 @@ import UIKit
  
  */
 class CardView: UIScrollView {
+    var scrollView: UIScrollView = {
+        let scrollView = UIScrollView()
+        scrollView.translatesAutoresizingMaskIntoConstraints = false
+        return scrollView
+    }()
+    
+    var contentView: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
+    convenience init(_ views: [UIView]) {
+        self.init()
+    }
+    
     
 }
