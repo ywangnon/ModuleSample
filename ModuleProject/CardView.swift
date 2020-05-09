@@ -17,21 +17,70 @@ import UIKit
  
  */
 class CardView: UIScrollView {
-    var scrollView: UIScrollView = {
-        let scrollView = UIScrollView()
-        scrollView.translatesAutoresizingMaskIntoConstraints = false
-        return scrollView
-    }()
-    
     var contentView: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
     
+    var views: [UIView] = []
+    
     convenience init(_ views: [UIView]) {
         self.init()
+        
+        self.views = views
+        
+        self.setViewFoundations()
+        self.setAddSubViews()
+        self.setLayouts()
+        self.setDelegates()
+        self.setAddTargets()
+        self.setGestures()
     }
     
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
     
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    func setViewFoundations() {
+        
+    }
+    
+    func setAddSubViews() {
+        self.addSubview(contentView)
+    }
+    
+    func setLayouts() {
+        NSLayoutConstraint.activate([
+            self.contentView.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
+            self.contentView.leadingAnchor.constraint(equalTo: safeAreaLayoutGuide.leadingAnchor),
+            self.contentView.widthAnchor.constraint(equalTo: safeAreaLayoutGuide.widthAnchor, multiplier: CGFloat(self.views.count)),
+            self.contentView.heightAnchor.constraint(equalTo: safeAreaLayoutGuide.heightAnchor)
+        ])
+        
+        for i in 0..<self.views.count {
+            let cardView = UIView(frame: CGRect(x: self.frame.width * CGFloat(i),
+                                                y: 0,
+                                                width: self.frame.width,
+                                                height: self.frame.height))
+            cardView.addSubview(self.views[i])
+            self.views[i].frame = cardView.bounds
+        }
+    }
+    
+    func setDelegates() {
+        
+    }
+    
+    func setAddTargets() {
+        
+    }
+    
+    func setGestures() {
+        
+    }
 }
